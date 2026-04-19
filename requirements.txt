@@ -15,6 +15,17 @@ numpy>=1.24.0
 # Utilities
 tqdm>=4.65.0
 requests>=2.31.0
+PyYAML>=6.0
+
+# Detector + API
+ultralytics>=8.2.0
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9
+shapely>=2.0.0
 
 # Optional: for better visualization
 scikit-image>=0.21.0
+
+# Dev / tests
+pytest>=7.4.0

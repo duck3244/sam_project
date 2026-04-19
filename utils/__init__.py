@@ -23,6 +23,14 @@ from .image_utils import (
     calculate_mask_area,
     merge_masks,
 )
+from .export import (
+    mask_to_yolo_polygon,
+    mask_to_yolo_polygons,
+    write_yolo_seg,
+    write_dataset_yaml,
+    normalize_iscrowd,
+)
+from .detector import FruitDetector, FRUIT_CLASSES, DEFAULT_FRUIT_WEIGHTS
 
 __all__ = [
     'SAMPredictor',
@@ -42,4 +50,12 @@ __all__ = [
     'get_mask_bbox',
     'calculate_mask_area',
     'merge_masks',
+    'mask_to_yolo_polygon',
+    'mask_to_yolo_polygons',
+    'write_yolo_seg',
+    'write_dataset_yaml',
+    'normalize_iscrowd',
+    'FruitDetector',
+    'FRUIT_CLASSES',
+    'DEFAULT_FRUIT_WEIGHTS',
 ]

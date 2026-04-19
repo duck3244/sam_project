@@ -150,5 +150,33 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
-models/sam_vit_b_01ec64.pth
-models/sam_vit_h_4b8939.pth
+# Model weights & checkpoints (large binaries)
+models/
+*.pth
+*.pt
+*.onnx
+*.engine
+
+# Datasets (large image/label corpora)
+datasets/
+
+# YOLOv8 training outputs (weights, logs, plots)
+runs/
+
+# Pipeline outputs (auto-labeled sessions, eval results, exports)
+outputs/
+
+# Frontend build artifacts & deps
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+node_modules/
+
+# Logs
+*.log
+*.log.*
+
+# Sample / scratch images at project root
+/IMG_*.JPG
+/IMG_*.jpg
+/IMG_*.png
